@@ -1,0 +1,99 @@
+
+
+.container {
+    width: 100px;
+    background-color: brown;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid #bbb;
+    outline: 2px dashed red;
+}
+
+p {
+    color: white;
+    background-color: black;
+}
+
+p[id='new'] {
+    color: yellow;
+    background-color: blue;
+}
+
+a:active {
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+a:visited {
+    color: blue;
+}
+
+body {
+    background-color: red;
+    height: 3000px;
+}
+
+.parent {
+    background-color: red;
+    margin: 30px;
+    width: 600px;
+    height: 100px;
+}
+
+.child {
+    /* position: absolute;
+    top: 0px;
+    right: 10px; */
+    width: 300px;
+    height: 50px;
+}
+
+.yellow {
+    width: inherit;
+    height: 100px;
+    background-color: yellow;
+}
+
+.fixed {
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    color: green;
+    top: 700px;
+}
+
+.parent .orange {
+    width: inherit;
+    height: 400px;
+    background-color: orange;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: black;
+    }
+
+    .parent .orange {
+        background-color: red;
+    }
+
+    .yellow {
+        background-color: blue;
+    }
+
+  }
+
+  @media (min-width:500px) and (max-width:600px) {
+    body {
+        background-color: orange;
+    }
+
+    h1 {
+        color: white;
+        font-size: 12px;
+    }
+  }
